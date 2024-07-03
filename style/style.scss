@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #272727;
+}
+
+.wrapper {
+  width: 520px;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.bg {
+  background-image: url(https://cachizer1.2gis.com/reviews-photos/296a5030-21c4-41e1-80fa-65a3bb69eee1.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+.about {
+  background-color: #181818;
+  color: #dedede;
+  padding: 20px 15px;
+  min-height: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: -15px;
+  position: relative;
+  z-index: 5;
+  p {
+    font-size: 14px;
+    color: #676767;
+  }
+}
+
+.info {
+  color: #676767;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row wrap;
+  & > * {
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #676767;
+  }
+  span {
+    font-size: 14px;
+  }
+}
+
+.menu-tab {
+  display: flex;
+  .tab-elem {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid white;
+    margin-right: 10px;
+    padding: 3px 10px;
+    border-radius: 50px;
+    user-select: none;
+    transition: .3s;
+    &.active {
+      color: #181818;
+      background: white;
+    }
+    &:hover {
+      cursor: pointer;
+      color: #181818;
+      background: white;
+    }
+  }
+}
+
+.menu {
+  margin-top: 20px;
+  // .menu-item {
+  //   display: none;
+  //   &.active {
+  //     display: block;
+  //   }
+  // }
+  &.inside {
+    .item {
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      h4 {
+        margin: 10px 0;
+      }
+      p.description {
+        line-height: 1.6;
+        margin-bottom: 8px;
+      }
+      p.price {
+        margin-top: 8px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 24px;
+        span {
+          font-weight: normal;
+          margin-left: 5px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.category {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 16px;
+  width: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 100%;
+  color: #fff;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, .46);
+  background-size: cover;
+  background-position: 50%;
+  user-select: none;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: .3;
+  }
+  h2 {
+    z-index: 2;
+    text-transform: uppercase;
+    margin: 25px 0;
+    font-weight: 500;
+    font-size: 27px;
+  }
+}
